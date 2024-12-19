@@ -1,0 +1,14 @@
+collections_config:
+  src_bookshop_hero:
+    path: src/bookshop/hero
+    name: Src Bookshop Hero
+    icon: looks_one
+    disable_url: true
+paths:
+  static: public
+  uploads: public/uploads
+timezone: Asia/Jakarta
+markdown:
+  engine: commonmark
+  options:
+    gfm: true
