@@ -6,7 +6,7 @@ type ButtonProps = {
     action: ButtonAction
 }
 
-const Button = () => {
+const Button: React.FC<ButtonProps> = () => {
   return (
     <div>Button</div>
   )

@@ -8,7 +8,8 @@
       "@/components/*": ["src/components/*"],
       "@/pages/*": ["src/pages/*"],
       "@/bookshop/*": ["src/bookshop/*"],
-      "@/types/*": ["src/types/*"]
+      "@/types/*": ["src/types/*"],
+      "@/utils/*": ["src/utils/*"]
     },
     "verbatimModuleSyntax": false
   }
