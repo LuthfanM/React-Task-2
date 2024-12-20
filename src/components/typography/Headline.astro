@@ -1,22 +1,13 @@
 ---
-import HeadlineData from '@/bookshop/data/Headline.bookshop.json';
-export interface Props {
-  title?: string; 
-  kicker?: string; 
-  subhead?: string;
-  style?: string; 
-}
+import ReactHeadline from "./ReactHeadline";
+import HeadlineData from "@/bookshop/data/Headline.bookshop.json";
 
-const {
-  title = HeadlineData.title,
-  kicker = HeadlineData.kicker,
-  subhead = HeadlineData.subhead,
-  style = HeadlineData.style
-} = Astro.props;
+const props = {
+    title: HeadlineData.title,
+      kicker: HeadlineData.kicker,
+      subhead: HeadlineData.subhead,
+      style: HeadlineData.style,
+}
 ---
 
-<div class={`headline ${style}`}>
-  {kicker && <p class="text-sm text-gray-500 uppercase tracking-widest">{kicker.toLocaleUpperCase()}</p>}
-  <h2 class="text-3xl font-bold text-black">{title.toLocaleUpperCase()}</h2>
-  {subhead && <p class="text-lg text-gray-700">{subhead}</p>}
-</div>
+<ReactHeadline {...props} />
