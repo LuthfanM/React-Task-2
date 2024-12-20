@@ -1,15 +1,18 @@
-import React from 'react'
-import { ButtonAction, ButtonDisplay } from '@/types/ButtonTypes'
-
-type ButtonProps = {
-    display: ButtonDisplay,
-    action: ButtonAction
+import React from "react";
+import ButtonDisplay from "./ButtonDisplay";
+import ButtonAction from "./ButtonAction";
+import { ButtonActionType, ButtonDisplayType } from "@/types/ButtonTypes";
+interface ButtonProps {
+  display: ButtonDisplayType
+  action: ButtonActionType;
 }
 
-const Button: React.FC<ButtonProps> = () => {
+const Button: React.FC<ButtonProps> = ({ display, action }) => {
   return (
-    <div>Button</div>
+    <ButtonAction url={action.url}>
+      <ButtonDisplay style={display.style} text={display.text} />
+    </ButtonAction>
   )
 }
 
-export default Button
+export default Button;

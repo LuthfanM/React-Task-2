@@ -1,9 +1,10 @@
-type ButtonDisplay = {
+type ButtonDisplayType = {
   style: "primary" | "secondary";
+  text: string;
 };
 
-type ButtonAction = {
+type ButtonActionType = {
   url: string;
 };
 
-export type { ButtonDisplay, ButtonAction };
+export type { ButtonDisplayType, ButtonActionType };

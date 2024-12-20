@@ -1,5 +1,4 @@
 import React from "react";
-import HeadlineData from "@/bookshop/data/Headline.bookshop.json";
 
 interface HeadlineProps {
   title: string;
