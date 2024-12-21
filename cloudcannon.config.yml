@@ -1,3 +1,4 @@
+timezone: Asia/Jakarta
 _schema: _schema
 paths:
   uploads: public/uploads
@@ -30,7 +31,6 @@ collections_config:
     new_preview_url:
     schemas:
     schema_key:
-timezone: Asia/Jakarta
 markdown:
   engine: commonmark
   options:
