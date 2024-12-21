@@ -1,20 +1,19 @@
-timezone: Asia/Jakarta
 _schema: _schema
 paths:
   uploads: public/uploads
   static: public
 collections_config:
-  Data:
-    path: ''
+  Pages:
+    path: src/pages
     glob:
-    name:
+    name: Pages
     singular_name:
     icon: notes
     url:
     disable_url: false
     include_developer_files:
     documentation:
-    description:
+    description: ''
     preview:
     sort:
     sort_options:
@@ -31,6 +30,34 @@ collections_config:
     new_preview_url:
     schemas:
     schema_key:
+  Data:
+    path: data
+    glob:
+    name: Data
+    singular_name:
+    icon: notes
+    url:
+    disable_url: false
+    include_developer_files:
+    documentation:
+    description: ''
+    preview:
+    sort:
+    sort_options:
+    _editables:
+    _enabled_editors:
+    _inputs:
+    _select_data:
+    _structures:
+    add_options:
+    create:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    new_preview_url:
+    schemas:
+    schema_key:
+timezone: Asia/Jakarta
 markdown:
   engine: commonmark
   options:
